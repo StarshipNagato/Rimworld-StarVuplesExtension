@@ -1,6 +1,7 @@
  2026.11.19
  更新了Git仓库。
- https://github.com/liu569149573-cmd/Rimworld-StarVuplesExtention
+ https://github.com/StarshipNagato/Rimworld-StarVuplesExtension
+ 修改了名称，从"StarVuplesExtention"变更为"StarVuplesExtension"
 
  2026.11.01 v1.7.0
  简单适配1.7版本，添加了版本隔离和DLC启用检测。1.7适配未经充分测试，可能存在未知问题。(根本就没有适配吧？看起来能跑就上传了！)
