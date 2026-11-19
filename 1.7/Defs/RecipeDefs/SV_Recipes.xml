@@ -1,0 +1,793 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- 制作星狐织物 -->
+  <RecipeDef> <!-- 配方信息 -->
+    <defName>Make_SV_Fabric</defName> <!-- 配方名称 -->
+    <label>Make Starfox Fabric</label> <!-- 配方显示名称 -->
+    <description>Make Starfox Fabric</description> <!-- 配方描述 -->
+    <jobString>Making Starfox Fabric</jobString> <!-- 工作状态描述 -->
+    <workAmount>11290</workAmount> <!-- 工作量,1倍速每秒60工作量 -->
+    <workSkill>Crafting</workSkill> <!-- 工作所需技能-手工 -->
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- 受影响的工作类型 -->
+    <recipeUsers> <!-- 配方加工点 -->
+      <li>FabricationBench</li> <!-- 精密装配台 -->
+      <li>TableMachining</li> <!-- 机械加工台 -->
+      <li>ElectricTailoringBench</li> <!-- 电力裁缝台 -->
+      <li>HandTailoringBench</li> <!-- 裁缝台 -->
+      <li>CraftingSpot</li> <!-- 手工加工点 -->
+      <!--<li>ElectricSmelter</li> < 电力熔炼炉 -->
+     </recipeUsers>
+    <researchPrerequisite>SV_StarfoxFabric_Recipe</researchPrerequisite> <!-- 配方所需的研究选项 -->
+    <ingredients> <!-- 配方所需材料 -->
+      <!--<li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Jade</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>-->
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <products> <!-- 配方产出 -->
+      <SV_Fabric>300</SV_Fabric> <!-- 产出星狐织物 -->
+    </products>
+    <skillRequirements> <!-- 技能等级需求 -->
+      <Crafting>12</Crafting> <!-- 手工 -->
+      <Intellectual>4</Intellectual> <!-- 智识 -->
+    </skillRequirements>
+    <displayPriority>40</displayPriority><!-- 显示优先级，数字越小越靠前 -->
+  </RecipeDef>
+
+  <!-- 制作红相晶钢 -->
+  <RecipeDef>
+    <defName>Make_Rediamond_Alloy</defName>
+    <label>Make Rediamond Alloy.</label>
+    <description>Make Rediamond Alloy.</description>
+    <jobString>Making Rediamond Alloy.</jobString>
+    <workAmount>9000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>ElectricSmelter</li>
+    </recipeUsers>
+    <researchPrerequisite>SV_Resource_Forge</researchPrerequisite>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>225</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Jade</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+    </ingredients>
+    <products>
+      <SV_Rediamond_Alloy>75</SV_Rediamond_Alloy>
+    </products>
+    <skillRequirements>
+      <Crafting>16</Crafting>
+    </skillRequirements>
+    <displayPriority>91</displayPriority>
+  </RecipeDef>
+
+  <!-- 制作青相合金 -->
+  <RecipeDef>
+    <defName>Make_Aeroteal_Alloy</defName>
+    <label>Make Aeroteal Alloy.</label>
+    <description>Make Aeroteal Alloy.</description>
+    <jobString>Making Aeroteal Alloy.</jobString>
+    <workAmount>9000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>ElectricSmelter</li>
+    </recipeUsers>
+    <researchPrerequisite>SV_Resource_Forge</researchPrerequisite>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>375</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+    </ingredients>
+    <products>
+      <SV_Aeroteal_Alloy>75</SV_Aeroteal_Alloy>
+    </products>
+    <skillRequirements>
+      <Crafting>16</Crafting>
+    </skillRequirements>
+    <displayPriority>92</displayPriority>
+  </RecipeDef>
+
+  <!-- 制作超锻合金 -->
+  <RecipeDef>
+    <defName>Make_Hyperforge_Alloy</defName>
+    <label>Make Hyperforge Alloy.</label>
+    <description>Make Hyperforge Alloy.</description>
+    <jobString>Making Hyperforge Alloy.</jobString>
+    <workAmount>15000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>ElectricSmelter</li>
+    </recipeUsers>
+    <researchPrerequisite>SV_Alloy_Forge</researchPrerequisite>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SV_Aeroteal_Alloy</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SV_Rediamond_Alloy</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <products>
+      <SV_Hyperforge_Alloy>75</SV_Hyperforge_Alloy>
+    </products>
+    <skillRequirements>
+      <Crafting>20</Crafting>
+    </skillRequirements>
+    <displayPriority>93</displayPriority>
+  </RecipeDef>
+
+  <!-- 合成中性胺 -->
+  <RecipeDef>
+    <defName>SV_Make_Neutroamine</defName>
+    <label>Make Neutroamine</label>
+    <description>Make Neutroamine.</description>
+    <jobString>Making Neutroamine.</jobString>
+    <workAmount>3000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>BiofuelRefinery</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>PenoxycylineProduction</li>
+      <li>MedicineProduction</li>
+    </researchPrerequisites>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <products>
+      <Neutroamine>50</Neutroamine>
+    </products>
+    <skillRequirements>
+      <Crafting>3</Crafting>
+      <Intellectual>3</Intellectual>
+    </skillRequirements>
+  </RecipeDef>
+
+  <!-- 制作闪耀医药 -->
+  <RecipeDef>
+    <defName>SV_Make_Glitterworld_medicine</defName>
+    <label>Make Glitterworld medicine.</label>
+    <description>Make Glitterworld medicine.</description>
+    <jobString>Making Glitterworld medicine.</jobString>
+    <workAmount>900</workAmount>
+    <workSkill>Intellectual</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <researchPrerequisites> <!-- 多个前置研究,加s -->
+      <li>MedicineProduction</li>
+      <li>SV_GlitterworldTech</li>
+    </researchPrerequisites>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+    </ingredients>
+    <products>
+      <MedicineUltratech>1</MedicineUltratech>
+    </products>
+    <skillRequirements>
+      <Medicine>4</Medicine>
+      <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <displayPriority>301</displayPriority>
+  </RecipeDef>
+
+  <!-- 制作6份闪耀医药 -->
+  <RecipeDef>
+    <defName>SV_Make_6xGlitterworld_medicine</defName>
+    <label>Make 6 Glitterworld medicine.</label>
+    <description>Make 6 Glitterworld medicine.</description>
+    <jobString>Making Glitterworld medicine.</jobString>
+    <workAmount>3600</workAmount>
+    <workSkill>Intellectual</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>MedicineProduction</li>
+      <li>SV_GlitterworldTech</li>
+    </researchPrerequisites>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>18</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>36</count>
+      </li>
+    </ingredients>
+    <products>
+      <MedicineUltratech>6</MedicineUltratech>
+    </products>
+    <skillRequirements>
+      <Medicine>4</Medicine>
+      <Intellectual>8</Intellectual>
+    </skillRequirements>
+    <displayPriority>302</displayPriority>
+  </RecipeDef>
+
+  <!-- 制作闪耀科技核心 免得雷霆工作量搓一天 -->
+  <RecipeDef>
+    <defName>SV_Make_GlitterTechCore</defName>
+    <label>Make GlitterTech core.</label>
+    <description>Make GlitterTech core.</description>
+    <jobString>Making GlitterTech core.</jobString>
+    <workAmount>15000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <researchPrerequisite>SV_GlitterworldTech</researchPrerequisite>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <products>
+      <SV_GlitterTechCore>1</SV_GlitterTechCore>
+    </products>
+    <skillRequirements>
+      <Crafting>12</Crafting>
+      <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <displayPriority>91</displayPriority>
+  </RecipeDef>
+
+  <!-- 制作科技核心 -->
+  <RecipeDef>
+    <defName>SV_Make_TechprofSubpersonaCore</defName>
+    <label>Make Techprof subpersona core.</label>
+    <description>Make Techprof subpersona core.</description>
+    <jobString>Making Techprof subpersona core.</jobString>
+    <workAmount>15000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <researchPrerequisite>SV_GlitterTech_TechCore_and_PersonaCore</researchPrerequisite>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+          </thingDefs>
+        </filter>
+        <count>300</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SV_GlitterTechCore</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <TechprofSubpersonaCore>1</TechprofSubpersonaCore>
+    </products>
+    <skillRequirements>
+      <Crafting>16</Crafting>
+      <Intellectual>18</Intellectual>
+    </skillRequirements>
+    <displayPriority>92</displayPriority>
+  </RecipeDef>
+
+  <!-- 制作AI人格核心 -->
+  <RecipeDef>
+    <defName>SV_Make_PersonaCore</defName>
+    <label>Make Persona core.</label>
+    <description>Make Persona core.</description>
+    <jobString>Making Persona core.</jobString>
+    <workAmount>6000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <researchPrerequisite>SV_GlitterTech_TechCore_and_PersonaCore</researchPrerequisite>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SV_GlitterTechCore</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <AIPersonaCore>1</AIPersonaCore>
+    </products>
+    <skillRequirements>
+      <Crafting>16</Crafting>
+      <Intellectual>18</Intellectual>
+    </skillRequirements>
+    <displayPriority>93</displayPriority>
+  </RecipeDef>
+
+  <!-- 制作魔鬼素 -->
+  <RecipeDef>
+    <defName>SV_Make_Luciferium</defName>
+    <label>Make Luciferium.</label>
+    <description>Make Luciferium.</description>
+    <jobString>Making Luciferium.</jobString>
+    <workAmount>900</workAmount>
+    <workSkill>Intellectual</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <researchPrerequisite>SV_GlitterTech_MechSerum</researchPrerequisite>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineUltratech</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <Luciferium>1</Luciferium>
+    </products>
+    <skillRequirements>
+      <Intellectual>8</Intellectual>
+    </skillRequirements>
+  </RecipeDef>
+
+  <!-- 制作6份魔鬼素 -->
+  <RecipeDef>
+    <defName>SV_Make_6xLuciferium</defName>
+    <label>Make Luciferium.</label>
+    <description>Make Luciferium.</description>
+    <jobString>Making Luciferium.</jobString>
+    <workAmount>3600</workAmount>
+    <workSkill>Intellectual</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <researchPrerequisite>SV_GlitterTech_MechSerum</researchPrerequisite>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineUltratech</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+    </ingredients>
+    <products>
+      <Luciferium>6</Luciferium>
+    </products>
+    <skillRequirements>
+      <Intellectual>8</Intellectual>
+    </skillRequirements>
+  </RecipeDef>
+
+  <!-- 制作治愈机械液 -->
+  <RecipeDef>
+    <defName>SV_Make_MechSerumHealer</defName>
+    <label>Make Healer mech serum</label>
+    <description>Make Healer mech serum.</description>
+    <jobString>Making Healer mech serum.</jobString>
+    <workAmount>1500</workAmount>
+    <workSkill>Intellectual</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <researchPrerequisite>SV_GlitterTech_MechSerum</researchPrerequisite>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineUltratech</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Luciferium</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <products>
+      <MechSerumHealer>1</MechSerumHealer>
+    </products>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+      <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <displayPriority>41</displayPriority>
+  </RecipeDef>
+
+  <!-- 制作复活机械液 -->
+  <RecipeDef>
+    <defName>SV_Make_MechSerumResurrector</defName>
+    <label>Make Resurrector mech serum</label>
+    <description>Make Resurrector mech serum.</description>
+    <jobString>Making Resurrector mech serum.</jobString>
+    <workAmount>2400</workAmount>
+    <workSkill>Intellectual</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <researchPrerequisite>SV_GlitterTech_MechSerum</researchPrerequisite>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineUltratech</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Luciferium</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <products>
+      <MechSerumResurrector>1</MechSerumResurrector>
+    </products>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+      <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <displayPriority>42</displayPriority>
+  </RecipeDef>
+
+  <!-- 制作虚空电池 -->
+  <RecipeDef>
+    <defName>SV_Make_VanometricPowerCell</defName>
+    <label>Make vanometric power cell.</label>
+    <description>Make vanometric power cell.</description>
+    <jobString>Making vanometric power cell.</jobString>
+    <workAmount>10000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <researchPrerequisite>SV_GlitterTech_VanometricPowerCell</researchPrerequisite>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+    </ingredients>
+    <products>
+      <VanometricPowerCell>1</VanometricPowerCell>
+    </products>
+    <skillRequirements>
+      <Crafting>18</Crafting>
+      <Intellectual>6</Intellectual>
+    </skillRequirements>
+    <displayPriority>94</displayPriority>
+  </RecipeDef>
+
+  <!-- 制作心灵放射器 -->
+  <RecipeDef>
+    <defName>SV_Make_PsychicEmanator</defName>
+    <label>Make psychic emanator.</label>
+    <description>Make psychic emanator.</description>
+    <jobString>Making psychic emanator.</jobString>
+    <workAmount>6000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <researchPrerequisite>SV_GlitterTech_PsychicEmanator</researchPrerequisite>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+    </ingredients>
+    <products>
+      <PsychicEmanator>1</PsychicEmanator>
+    </products>
+    <skillRequirements>
+      <Crafting>12</Crafting>
+    </skillRequirements>
+    <displayPriority>95</displayPriority>
+  </RecipeDef>
+
+  <!-- 制作无限反应釜 -->
+  <RecipeDef>
+    <defName>SV_Make_InfiniteChemreactor</defName>
+    <label>Make infinite chemreactor.</label>
+    <description>Make infinite chemreactor.</description>
+    <jobString>Making infinite chemreactor.</jobString>
+    <workAmount>15000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <researchPrerequisite>SV_GlitterTech_InfiniteChemreactor</researchPrerequisite>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+    </ingredients>
+    <products>
+      <InfiniteChemreactor>1</InfiniteChemreactor>
+    </products>
+    <skillRequirements>
+      <Crafting>18</Crafting>
+    </skillRequirements>
+    <displayPriority>95</displayPriority>
+  </RecipeDef>
+
+</Defs>

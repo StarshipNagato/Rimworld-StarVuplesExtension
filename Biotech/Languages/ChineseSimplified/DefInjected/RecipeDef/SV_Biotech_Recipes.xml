@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ExtractPlasticFromWastepack.label>分拣有毒垃圾</ExtractPlasticFromWastepack.label>
+  <ExtractPlasticFromWastepack.description>手动分拣有毒垃圾包。通过这种原始且危险的方式，可以提取出可用的塑料纤维。这是一项极其耗时且枯燥的工作。</ExtractPlasticFromWastepack.description>
+  <ExtractPlasticFromWastepack.jobString>分拣垃圾中</ExtractPlasticFromWastepack.jobString>
+
+</LanguageData>

@@ -1,12 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <Make_SV_Fabric.label>制作星狐织物</Make_SV_Fabric.label>
-  <Make_SV_Fabric.description>理论上在边缘世界是做不出这种织物的，但狐狐们为此专门开发了一个法术，让我们得以从工作台上创造出这种织物</Make_SV_Fabric.description>
+  <Make_SV_Fabric.description>理论上在边缘世界是做不出这种织物的，但狐狐们为此专门开发了一个法术，让我们得以从工作台上创造出这种织物。</Make_SV_Fabric.description>
   <Make_SV_Fabric.jobString>正在加入魔法制作星狐织物</Make_SV_Fabric.jobString>
 
-  <ExtractPlasticFromWastepack.label>分拣有毒垃圾</ExtractPlasticFromWastepack.label>
-  <ExtractPlasticFromWastepack.description>手动分拣有毒垃圾包。通过这种原始且危险的方式，可以提取出可用的塑料纤维。这是一项极其耗时且枯燥的工作。</ExtractPlasticFromWastepack.description>
-  <ExtractPlasticFromWastepack.jobString>分拣垃圾中</ExtractPlasticFromWastepack.jobString>
+  <Make_Rediamond_Alloy.label>制作红相晶钢</Make_Rediamond_Alloy.label>
+  <Make_Rediamond_Alloy.description>在高能条件下进行原子级操控改变材料的性质后得到兼具美观与实用的有水晶般表面的合金。</Make_Rediamond_Alloy.description>
+  <Make_Rediamond_Alloy.jobString>正在制作红相晶钢</Make_Rediamond_Alloy.jobString>
+
+  <Make_Aeroteal_Alloy.label>制作青相合金</Make_Aeroteal_Alloy.label>
+  <Make_Aeroteal_Alloy.description>对普通材料的超级压缩并重新改变原子和结构性质后得到的新的高强度轻结构合金。</Make_Aeroteal_Alloy.description>
+  <Make_Aeroteal_Alloy.jobString>正在制作青相合金</Make_Aeroteal_Alloy.jobString>
+
+  <Make_Hyperforge_Alloy.label>制作超锻合金</Make_Hyperforge_Alloy.label>
+  <Make_Hyperforge_Alloy.description>使用红相晶钢与青相合金在更高能量下对原材料重新组合得到兼顾绝大部分性能的优异合金。</Make_Hyperforge_Alloy.description>
+  <Make_Hyperforge_Alloy.jobString>正在制作超锻合金</Make_Hyperforge_Alloy.jobString>
+
+  <SV_Make_Neutroamine.label>合成中性胺</SV_Make_Neutroamine.label>
+  <SV_Make_Neutroamine.description>合成中性胺</SV_Make_Neutroamine.description>
+  <SV_Make_Neutroamine.jobString>正在合成中性胺</SV_Make_Neutroamine.jobString>
+
+  <SV_Make_Glitterworld_medicine.label>制作闪耀世界医药</SV_Make_Glitterworld_medicine.label>
+  <SV_Make_Glitterworld_medicine.description>制作闪耀世界医药</SV_Make_Glitterworld_medicine.description>
+  <SV_Make_Glitterworld_medicine.jobString>正在制作闪耀世界医药</SV_Make_Glitterworld_medicine.jobString>
+
+  <SV_Make_6xGlitterworld_medicine.label>制作闪耀世界医药 x6</SV_Make_6xGlitterworld_medicine.label>
+  <SV_Make_6xGlitterworld_medicine.description>制作闪耀世界医药 x6</SV_Make_6xGlitterworld_medicine.description>
+  <SV_Make_6xGlitterworld_medicine.jobString>正在制作大量闪耀世界医药</SV_Make_6xGlitterworld_medicine.jobString>
+
+  <SV_Make_GlitterTechCore.label>制作闪耀科技核心</SV_Make_GlitterTechCore.label>
+  <SV_Make_GlitterTechCore.description>制作闪耀科技核心</SV_Make_GlitterTechCore.description>
+  <SV_Make_GlitterTechCore.jobString>正在制作闪耀科技核心</SV_Make_GlitterTechCore.jobString>
+
+  <SV_Make_TechprofSubpersonaCore.label>制作科技核心</SV_Make_TechprofSubpersonaCore.label>
+  <SV_Make_TechprofSubpersonaCore.description>制作科技核心</SV_Make_TechprofSubpersonaCore.description>
+  <SV_Make_TechprofSubpersonaCore.jobString>正在制作科技核心</SV_Make_TechprofSubpersonaCore.jobString>
+
+  <SV_Make_PersonaCore.label>制作人格核心</SV_Make_PersonaCore.label>
+  <SV_Make_PersonaCore.description>制作人格核心</SV_Make_PersonaCore.description>
+  <SV_Make_PersonaCore.jobString>正在制作人格核心</SV_Make_PersonaCore.jobString>
+
+  <SV_Make_Luciferium.label>制作魔鬼素</SV_Make_Luciferium.label>
+  <SV_Make_Luciferium.description>制作魔鬼素</SV_Make_Luciferium.description>
+  <SV_Make_Luciferium.jobString>正在制作魔鬼素</SV_Make_Luciferium.jobString>
+
+  <SV_Make_6xLuciferium.label>制作魔鬼素 x6</SV_Make_6xLuciferium.label>
+  <SV_Make_6xLuciferium.description>制作魔鬼素 x6</SV_Make_6xLuciferium.description>
+  <SV_Make_6xLuciferium.jobString>正在制作大量魔鬼素</SV_Make_6xLuciferium.jobString>
+
+  <SV_Make_MechSerumHealer.label>制作治愈机械液</SV_Make_MechSerumHealer.label>
+  <SV_Make_MechSerumHealer.description>制作治愈机械液</SV_Make_MechSerumHealer.description>
+  <SV_Make_MechSerumHealer.jobString>正在制作治愈机械液</SV_Make_MechSerumHealer.jobString>
+
+  <SV_Make_MechSerumResurrector.label>制作复活机械液</SV_Make_MechSerumResurrector.label>
+  <SV_Make_MechSerumResurrector.description>制作复活机械液</SV_Make_MechSerumResurrector.description>
+  <SV_Make_MechSerumResurrector.jobString>正在制作复活机械液</SV_Make_MechSerumResurrector.jobString>
+
+  <SV_Make_VanometricPowerCell.label>组装虚空电池</SV_Make_VanometricPowerCell.label>
+  <SV_Make_VanometricPowerCell.description>组装虚空电池</SV_Make_VanometricPowerCell.description>
+  <SV_Make_VanometricPowerCell.jobString>正在组装虚空电池</SV_Make_VanometricPowerCell.jobString>
+
+  <SV_Make_PsychicEmanator.label>组装心灵放射器</SV_Make_PsychicEmanator.label>
+  <SV_Make_PsychicEmanator.description>组装心灵放射器</SV_Make_PsychicEmanator.description>
+  <SV_Make_PsychicEmanator.jobString>正在组装心灵放射器</SV_Make_PsychicEmanator.jobString>
+
+  <SV_Make_InfiniteChemreactor.label>组装无限反应釜</SV_Make_InfiniteChemreactor.label>
+  <SV_Make_InfiniteChemreactor.description>组装无限反应釜</SV_Make_InfiniteChemreactor.description>
+  <SV_Make_InfiniteChemreactor.jobString>正在组装无限反应釜</SV_Make_InfiniteChemreactor.jobString>
 
 </LanguageData>

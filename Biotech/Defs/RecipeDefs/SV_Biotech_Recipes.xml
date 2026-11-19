@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 分拣有毒垃圾(塑料布) -->
+  <RecipeDef>
+    <defName>ExtractPlasticFromWastepack</defName>
+    <label>extract plastic from wastepacks</label>
+    <description>Manually sorting wastepacks. This primitive and dangerous method allows usable plastic fabric to be extracted. It is an extremely time-consuming and tedious task.</description>
+    <jobString>Sorting wastepacks.</jobString>
+    <workAmount>15000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <researchPrerequisite>WastepackAtomizer</researchPrerequisite>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Wastepack</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Plasticfabric>20</Plasticfabric>
+    </products>
+    <skillRequirements>
+      <Crafting>1</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+
+</Defs>

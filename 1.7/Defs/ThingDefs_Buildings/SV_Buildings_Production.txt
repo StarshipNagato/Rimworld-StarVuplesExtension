@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- 仪式魔法点 --><!-- 合成奇奇怪怪的材料的地方 -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>SV_RitualMagicSpot</defName>
+    <label>ritual magic spot</label>
+    <!-- 一个进行仪式魔法的地方 -->
+    <description>A spot for performing ritual magic.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/SV_RitualMagicSpot</texPath>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>0</pathCost>
+    <statBases>
+      <MaxHitPoints>4100</MaxHitPoints>
+      <WorkToBuild>1129</WorkToBuild> <!-- 很快 -->
+      <Flammability>0.0</Flammability>
+  </ThingDef>
+</Defs>

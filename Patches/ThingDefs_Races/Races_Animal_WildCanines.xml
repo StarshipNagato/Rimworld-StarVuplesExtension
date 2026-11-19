@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+  <!-- 修改狐狸可训练度为高级 -->
   <!--<Operation Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[@Name="ThingBaseFox"]/race/trainability</xpath>
       <value>

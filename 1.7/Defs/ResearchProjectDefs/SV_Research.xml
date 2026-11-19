@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchTabDef>
+    <defName>SV_ResearchTab</defName> <!-- 研究页面名称全局唯一 -->
+    <label>Starfox Tech</label> <!-- 研究页面可见名称 -->
+  </ResearchTabDef>
+
+  <!-- 研究选项-联系星狐，大前置不解锁任何东西，未来会在完成后解锁一个可联系的派系 -->
+  <ResearchProjectDef>
+    <defName>SV_ContactWithStarfox</defName> <!-- 研究选项名称全局唯一 -->
+    <label>Contact with Starfox</label> <!-- 选项的可见名称 -->
+    <description>Contact with Starfox.</description> <!-- 描述 -->
+    <tab>SV_ResearchTab</tab> <!-- 所属研究页面，关联于<ResearchTabDef>下的<defName> -->
+    <techLevel>Spacer</techLevel> <!-- 科技时代:太空时代 -->
+    <baseCost>112900</baseCost> <!-- 研究的基础花费，没错就是这么多，久远之旅同款神秘数值科技点，最好用科技核心跳过 -->
+    <prerequisites> <!-- 前置条件 -->
+     <li>MicroelectronicsBasics</li> <!-- 前置条件-微电子基础 -->
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding> <!-- 需要研究台-高级研究台 -->
+    <requiredResearchFacilities> <!-- 需要研究设施 -->
+      <li>MultiAnalyzer</li> <!-- 多元分析仪 -->
+    </requiredResearchFacilities>
+    <researchViewX>1</researchViewX> <!-- 研究选项左右位置 -->
+    <researchViewY>2.5</researchViewY> <!-- 研究选项上下位置 -->
+  </ResearchProjectDef>
+
+  <!-- 高等织物处理，为原版超织物和合成纤维添加了制作配方 -->
+  <ResearchProjectDef>
+    <defName>SV_Advanced_Fabric_Treatment</defName>
+    <label>Advanced Fabric Treatment</label>
+    <description>.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Spacer</techLevel> <!-- 太空时代 -->
+    <baseCost>2000</baseCost> <!-- 研究的基础花费 -->
+    <prerequisites>
+      <li>SterileMaterials</li> <!-- 前置条件-无菌材料 -->
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0.5</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 研究选项-星狐织物，目前计划在机械加工台上解锁一个配方，未来可能是开放派系的购买或用Anomaly的仪式召唤 -->
+  <ResearchProjectDef>
+    <defName>SV_StarfoxFabric_Recipe</defName>
+    <label>Learn to get Starfox Fabric</label>
+    <description>Learn to get Starfox Fabric.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Spacer</techLevel> <!-- 太空时代 -->
+    <baseCost>3240</baseCost> <!-- 研究的基础花费 -->
+    <prerequisites>
+      <li>SV_Advanced_Fabric_Treatment</li> <!-- 前置条件-高等织物处理 -->
+      <li>SV_ContactWithStarfox</li> <!-- 前置条件-联系星狐 -->
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>2</researchViewX>
+    <researchViewY>0.5</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 星狐镀层 -->
+  <ResearchProjectDef>
+    <defName>SV_Starfox_Coating</defName>
+    <label>Starfox Coating</label>
+    <description>.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Spacer</techLevel>
+    <baseCost>4000</baseCost>
+    <prerequisites>
+      <li>SV_StarfoxFabric_Recipe</li> <!-- 前置条件-星狐织物 -->
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>3</researchViewX>
+    <researchViewY>0.5</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 闪耀世界科技 -->
+  <ResearchProjectDef>
+    <defName>SV_GlitterworldTech</defName>
+    <label>Glitter Tech</label>
+    <description>Reach Glitterworld techlevel.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Ultra</techLevel>
+    <baseCost>12800</baseCost>
+    <prerequisites>
+      <li>AdvancedFabrication</li> <!-- 前置条件-高级精密装配 -->
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 科技核心、AI人格核心制作，需要上个科技解锁的闪耀技术核心 -->
+  <ResearchProjectDef>
+    <defName>SV_GlitterTech_TechCore_and_PersonaCore</defName>
+    <label>Tech and Persona Core</label>
+    <description>Unlock the ability to craft Techprof subpersona cores and Persona cores.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Ultra</techLevel>
+    <baseCost>8000</baseCost>
+    <prerequisites>
+      <li>SV_GlitterworldTech</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>1</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 纳米机械液制作，50魔鬼素+6闪耀世界医药=1复活机械液，25魔鬼素+6闪耀世界医药=1治愈机械液 -->
+  <ResearchProjectDef>
+    <defName>SV_GlitterTech_MechSerum</defName>
+    <label>Mech Serum</label>
+    <description>Carefully adjust the mechanites until they are just right.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Ultra</techLevel>
+    <baseCost>6000</baseCost>
+    <prerequisites>
+      <li>SV_GlitterworldTech</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>2</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 虚空电池制作，100钢铁+6高级零部件=1产物 -->
+  <ResearchProjectDef>
+    <defName>SV_GlitterTech_VanometricPowerCell</defName>
+    <label>Vanometric Power Cell</label>
+    <description>Generates free energy, forever, without using fuel. This technology is developed by archotechs, and is beyond even most glitterworld societies. While nobody knows exactly how it works, scholars believe it somehow extracts energy directly from fluctuations in the quantum foam.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Ultra</techLevel>
+    <baseCost>2800</baseCost>
+    <prerequisites>
+      <li>SV_GlitterworldTech</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>3</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 心灵放射器制作，50钢铁+6高级零部件=1产物 -->
+  <ResearchProjectDef>
+    <defName>SV_GlitterTech_PsychicEmanator</defName>
+    <label>Psychic Emanator</label>
+    <description>An ancient device that projects a soothing psychic field around itself. This improves the mood of anyone nearby. Works through walls.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Ultra</techLevel>
+    <baseCost>2800</baseCost>
+    <prerequisites>
+      <li>SV_GlitterworldTech</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>4</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 无限反应釜制作，200钢铁+6高级零部件=1产物 -->
+  <ResearchProjectDef>
+    <defName>SV_GlitterTech_InfiniteChemreactor</defName>
+    <label>Infinite Chemreactor</label>
+    <description>Slowly generates chemfuel by a complex series of chemical reactions, using atoms extracted from the air.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Ultra</techLevel>
+    <baseCost>2800</baseCost>
+    <prerequisites>
+      <li>SV_GlitterworldTech</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>5</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 研究选项-高等材料处理 -->
+  <ResearchProjectDef>
+    <defName>SV_Advanced_Materials_Processing</defName>
+    <label>Advanced Materials Processing</label>
+    <description>.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Spacer</techLevel>
+    <baseCost>2000</baseCost>
+    <prerequisites>
+      <li>Fabrication</li> <!-- 精密装配 -->
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>0</researchViewX>
+    <researchViewY>1.5</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 研究选项-材料锻造 -->
+  <ResearchProjectDef>
+    <defName>SV_Resource_Forge</defName>
+    <label>Materials precision work</label>
+    <description>Learn to further process raw materials in Rimworld.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Spacer</techLevel>
+    <baseCost>4100</baseCost>
+    <prerequisites>
+      <li>SV_Advanced_Materials_Processing</li>
+      <li>SV_ContactWithStarfox</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>2</researchViewX>
+    <researchViewY>1.5</researchViewY>
+  </ResearchProjectDef>
+
+    <!-- 研究选项-合金锻造 -->
+  <ResearchProjectDef>
+    <defName>SV_Alloy_Forge</defName>
+    <label>Alloy compression</label>
+    <description>Learning to compress alloys to improve material properties.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Ultra</techLevel> <!-- 极致时代 -->
+    <baseCost>4100</baseCost>
+    <prerequisites>
+      <li>SV_Resource_Forge</li> <!-- 前置条件-材料锻造 -->
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>3</researchViewX>
+    <researchViewY>1.5</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 研究选项-太空时代工业 -->
+  <ResearchProjectDef>
+    <defName>SV_Spacer_Industry</defName>
+    <label>Spacer Industry</label>
+    <description>.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Spacer</techLevel>
+    <baseCost>100</baseCost>
+    <prerequisites>
+      <li>SV_ContactWithStarfox</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>2</researchViewX>
+    <researchViewY>2.5</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 研究选项-极致时代工业 -->
+  <ResearchProjectDef>
+    <defName>SV_Ultra_Industry</defName>
+    <label>Ultra Industry</label>
+    <description>.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Ultra</techLevel>
+    <baseCost>100</baseCost>
+    <prerequisites>
+      <li>SV_Spacer_Industry</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>3</researchViewX>
+    <researchViewY>2.5</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 研究选项-基因图谱 -->
+  <ResearchProjectDef>
+    <defName>SV_Gene_Map</defName>
+    <label>Gene Map</label>
+    <description>.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Spacer</techLevel>
+    <baseCost>100</baseCost>
+    <prerequisites>
+      <li>MultiAnalyzer</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>0</researchViewX>
+    <researchViewY>3.5</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 研究选项-基因裁剪 -->
+  <ResearchProjectDef>
+    <defName>SV_Gene_Trimming</defName>
+    <label>Gene Trimming</label>
+    <description>.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Spacer</techLevel>
+    <baseCost>100</baseCost>
+    <prerequisites>
+      <li>SV_Gene_Map</li>
+      <li>SV_ContactWithStarfox</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>2</researchViewX>
+    <researchViewY>3.5</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 研究选项-先进义体部件 -->
+  <ResearchProjectDef>
+    <defName>SV_Advanced_Prosthetic_Components</defName>
+    <label>Advanced Prosthetic Components</label>
+    <description>.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Ultra</techLevel>
+    <baseCost>100</baseCost>
+    <prerequisites>
+      <li>SV_Gene_Trimming</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>3</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 研究选项-基因改造植物 -->
+  <ResearchProjectDef>
+    <defName>SV_Genetically_Modified_Plants</defName>
+    <label>Genetically Modified Plants</label>
+    <description>.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Ultra</techLevel>
+    <baseCost>100</baseCost>
+    <prerequisites>
+      <li>SV_Gene_Trimming</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>3</researchViewX>
+    <researchViewY>4</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 研究选项-基因重塑 -->
+  <ResearchProjectDef>
+    <defName>SV_Gene_Remodeling</defName>
+    <label>Gene Remodeling</label>
+    <description>.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Ultra</techLevel>
+    <baseCost>100</baseCost>
+    <prerequisites>
+      <li>SV_Gene_Trimming</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>4</researchViewX>
+    <researchViewY>3.5</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 研究选项-太空时代武器 -->
+  <ResearchProjectDef>
+    <defName>SV_Spacer_Weapon</defName>
+    <label>Spacer Weapons</label>
+    <description>.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Spacer</techLevel>
+    <baseCost>3000</baseCost>
+    <prerequisites>
+      <li>SV_ContactWithStarfox</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>2</researchViewX>
+    <researchViewY>4.5</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 研究选项-极致时代武器 -->
+  <ResearchProjectDef>
+    <defName>SV_Ultra_Weapon</defName>
+    <label>Ultra Weapons</label>
+    <description>.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Ultra</techLevel>
+    <baseCost>6000</baseCost>
+    <prerequisites>
+      <li>SV_Spacer_Weapon</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>3</researchViewX>
+    <researchViewY>4.5</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 研究选项-特化近战武器 -->
+  <ResearchProjectDef>
+    <defName>SV_Specialization_Melee_Weapon</defName>
+    <label>Specialization Melee Weapon</label>
+    <description>.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Industrial</techLevel>
+    <baseCost>1000</baseCost>
+    <prerequisites>
+      <li>LongBlades</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>0</researchViewX>
+    <researchViewY>6</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 研究选项-特化弓弩 -->
+  <ResearchProjectDef>
+    <defName>SV_Specialization_Crossbow</defName>
+    <label>Specialization Crossbow</label>
+    <description>.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Industrial</techLevel>
+    <baseCost>1000</baseCost>
+    <prerequisites>
+      <li>Greatbow</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>1</researchViewX>
+    <researchViewY>6</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 研究选项-特化枪械 -->
+  <ResearchProjectDef>
+    <defName>SV_Specialization_Gun</defName>
+    <label>Specialization Guns</label>
+    <description>.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Industrial</techLevel>
+    <baseCost>1000</baseCost>
+    <prerequisites>
+      <li>Gunsmithing</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>2</researchViewX>
+    <researchViewY>6</researchViewY>
+  </ResearchProjectDef>
+
+    <!-- 研究选项-异世界武器 -->
+  <ResearchProjectDef>
+    <defName>SV_NW_Weapon_Recipe</defName>
+    <label>New world weapons</label>
+    <description>Learn to make some new weapons.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Industrial</techLevel> <!-- 工业时代 -->
+    <baseCost>800</baseCost>
+    <prerequisites>
+      <li>Gunsmithing</li> <!-- 前置条件-枪械制作 -->
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>6</researchViewY>
+  </ResearchProjectDef>
+
+  <!-- 研究选项-先进异世界武器 -->
+  <ResearchProjectDef>
+    <defName>SV_AW_Weapon_Recipe</defName>
+    <label>Another world weapons</label>
+    <description>Learn to make some new advanced weapons.</description>
+    <tab>SV_ResearchTab</tab>
+    <techLevel>Spacer</techLevel>
+    <baseCost>1600</baseCost>
+    <prerequisites>
+      <li>SV_NW_Weapon_Recipe</li> <!-- 前置条件-异世界武器 -->
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>4</researchViewX>
+    <researchViewY>6</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

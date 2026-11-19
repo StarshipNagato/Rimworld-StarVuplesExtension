@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <!-- MG IKARUS -->
-  <SV_MG_IKARUS.label>通用机枪 IKARUS</SV_MG_IKARUS.label>
+  <SV_MG_IKARUS.label>&lt;color=#FF1432&gt;通用机枪 IKARUS&lt;/color&gt;</SV_MG_IKARUS.label>
   <SV_MG_IKARUS.description>通用机枪IKARUS(伊卡露斯)是从远古循环纪元遗留下来的实弹武器巅峰之作之一，采用双路供弹短行程直接闭锁结构，所有精密组件全部集成至握把易于维护，兼容太空环境，火力全开将消耗巨量大口径弹药。可惜以目前水平难以复刻，但好在其存量巨大。</SV_MG_IKARUS.description>
 
   <!-- 星狐特供5.56X45mm突击步枪 -->
-  <SV_StarVulpes_556AssaultRifle.label>星狐特供5.56X45mm突击步枪</SV_StarVulpes_556AssaultRifle.label>
+  <SV_SVAR.label>&lt;color=#FFFF14&gt;星狐特供5.56X45mm突击步枪&lt;/color&gt;</SV_SVAR.label>
 
   <!-- 星狐特供.338步枪 -->
-  <SV_StarVulpes_338_Rifle.label>星狐特供.338步枪</SV_StarVulpes_338_Rifle.label>
+  <SV_StarVulpes_338_Rifle.label>&lt;color=#14FFFF&gt;星狐特供.338步枪&lt;/color&gt;</SV_StarVulpes_338_Rifle.label>
+
+  <!-- 191突击步枪改 -->
+  <SV_Ce1est9a1l.label>&lt;color=#C0FFEE&gt;天界&lt;/color&gt;</SV_Ce1est9a1l.label>
+  <SV_Ce1est9a1l.description>一把实验性突击步枪，威力不俗。</SV_Ce1est9a1l.description>
 
   <!-- NSV -->
   <SV_NSV_Utes.label>NSV“峭壁”重机枪</SV_NSV_Utes.label>
@@ -23,8 +27,8 @@
   <SV_86x70_AXMC.description>AXMC是英国Accuracy International饱经实战考验的枪械系列的最新款武器。它使用.338马格南弹药，但也可以通过更换枪管、枪栓以及弹匣来快速转换为.300或.308口径。</SV_86x70_AXMC.description>
 
   <!-- HK416 MODIII -->
-  <SV_HK416_MODIII.label>HK416 MODIII</SV_HK416_MODIII.label>
-  <SV_HK416_MODIII.description>404小队定制的HK416专属套装。</SV_HK416_MODIII.description>
+  <SV_HK416_MODIII.label>&lt;color=#E11919&gt;HK416 MODIII&lt;/color&gt;</SV_HK416_MODIII.label>
+  <SV_HK416_MODIII.description>&lt;color=#E11919&gt;404小队定制的HK416专属套装。&lt;/color&gt;</SV_HK416_MODIII.description>
 
   <!-- HK416A5 -->
   <SV_HK_416A5_AR.label>HK 416A5 突击步枪</SV_HK_416A5_AR.label>

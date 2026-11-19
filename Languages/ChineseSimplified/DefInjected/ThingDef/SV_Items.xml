@@ -1,9 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <SV_Fabric.label>星狐织物</SV_Fabric.label>
+  <SV_Fabric.label>&lt;color=#9BCDFF&gt;星狐织物&lt;/color&gt;</SV_Fabric.label>
   <SV_Fabric.description>狐狐们在星际时代的通用民用织物，但在边缘世界其实做不出这种织物，好在炒饭智能给我们提供了联系星狐获取这一织物的方法。虽然性能相较原版有所下降且失去了一些独特的特性。</SV_Fabric.description>
   <SV_Fabric.stuffProps.stuffAdjective>星狐织物</SV_Fabric.stuffProps.stuffAdjective> <!--制成品的前置形容词。比如此处为"星狐织物米莉拉巡旅行装"，其中"星狐织物"即为此处填写的内容。-->
+
+  <SV_Rediamond_Alloy.label>&lt;color=#A00000&gt;红相晶钢&lt;/color&gt;</SV_Rediamond_Alloy.label>
+  <SV_Rediamond_Alloy.description>一种广泛用于各种高端装饰的合成金属，非常适合加工为既好用又美观的仪式刀剑或各种小装饰，作为防护材料时也表现良好。</SV_Rediamond_Alloy.description>
+  <SV_Rediamond_Alloy.stuffProps.stuffAdjective>红钢</SV_Rediamond_Alloy.stuffProps.stuffAdjective>
+
+  <SV_Aeroteal_Alloy.label>&lt;color=#0AAAAA&gt;青相合金&lt;/color&gt;</SV_Aeroteal_Alloy.label>
+  <SV_Aeroteal_Alloy.description>一种用于大多数民用建筑的合成材料，相比红相晶钢有着更高的强度和韧性，但也变得不那么适合制作刀剑这类利器。</SV_Aeroteal_Alloy.description>
+  <SV_Aeroteal_Alloy.stuffProps.stuffAdjective>青钢</SV_Aeroteal_Alloy.stuffProps.stuffAdjective>
+
+  <SV_Hyperforge_Alloy.label>&lt;color=#FFFF14&gt;超锻合金&lt;/color&gt;</SV_Hyperforge_Alloy.label>
+  <SV_Hyperforge_Alloy.description>由红相晶钢和青相合金进一步深加工而来，尽管其性能相比原品极大缩水，但这大概是你能在边缘世界找到的最万能、或许也是最昂贵的材料了。</SV_Hyperforge_Alloy.description>
+  <SV_Hyperforge_Alloy.stuffProps.stuffAdjective>超锻钢</SV_Hyperforge_Alloy.stuffProps.stuffAdjective>
+
+  <SV_GlitterTechCore.label>闪耀科技核心</SV_GlitterTechCore.label>
+  <SV_GlitterTechCore.description>闪耀世界技术的制成品，可以封装为科技核心或人格核心。</SV_GlitterTechCore.description>
 
   <!--<Glassfiber.label>玻璃纤维</Glassfiber.label>
   <Glassfiber.description>一种由许多极细的熔融玻璃拉制而成的纤维所组成的材料。</Glassfiber.description>
@@ -16,5 +31,9 @@
   <Plasticfabric.label>塑料布</Plasticfabric.label>
   <Plasticfabric.description>由回收塑料制成，虽然难看还容易烂，但可以加工制成非常耐用的东西。小心塑料污染。</Plasticfabric.description>
   <Plasticfabric.stuffProps.stuffAdjective>回收塑料</Plasticfabric.stuffProps.stuffAdjective>
+
+  <!--<SV_.label>&lt;color=#AAAAAA&gt;AAA&lt;/color&gt;</SV_.label>
+  <SV_.description>AAA</SV_.description>
+  <SV_.stuffProps.stuffAdjective>AAA</SV_.stuffProps.stuffAdjective>-->
 
 </LanguageData>

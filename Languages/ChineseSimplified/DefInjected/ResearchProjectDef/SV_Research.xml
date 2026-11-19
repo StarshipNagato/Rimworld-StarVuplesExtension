@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <SV_ResearchTab.label>星狐科技</SV_ResearchTab.label>
@@ -6,10 +6,85 @@
   <SV_ContactWithStarfox.label>联系星狐</SV_ContactWithStarfox.label>
   <SV_ContactWithStarfox.description>尝试与其他世界里由狐狐们组成的文明取得联系，如果一切顺利将会与其中一个星狐国家建立起联系。</SV_ContactWithStarfox.description>
 
-  <SV_Fabric_Recipe.label>获取星狐织物</SV_Fabric_Recipe.label>
-  <SV_Fabric_Recipe.description>边缘世界理论上是无法获取这些织物的，但热情的狐狐们还是想办法让我们用点魔法做出了类似的织物</SV_Fabric_Recipe.description>
+  <SV_Advanced_Fabric_Treatment.label>高等织物处理</SV_Advanced_Fabric_Treatment.label>
+  <SV_Advanced_Fabric_Treatment.description>生产边缘世界的高级织物。</SV_Advanced_Fabric_Treatment.description>
+
+  <SV_StarfoxFabric_Recipe.label>获取星狐织物</SV_StarfoxFabric_Recipe.label>
+  <SV_StarfoxFabric_Recipe.description>边缘世界理论上是无法获取这些织物的，但热情的狐狐们还是想办法让我们用点魔法做出了类似的织物。</SV_StarfoxFabric_Recipe.description>
+
+  <SV_Starfox_Coating.label>星狐镀层\n(开发中)</SV_Starfox_Coating.label>
+  <SV_Starfox_Coating.description>真正能用于装甲衣物的复合材料。</SV_Starfox_Coating.description>
+
+  <SV_GlitterworldTech.label>闪耀世界科技</SV_GlitterworldTech.label>
+  <SV_GlitterworldTech.description>建设闪耀世界。</SV_GlitterworldTech.description>
+
+  <SV_GlitterTech_TechCore_and_PersonaCore.label>制作闪耀核心</SV_GlitterTech_TechCore_and_PersonaCore.label>
+  <SV_GlitterTech_TechCore_and_PersonaCore.description>精密的科技核心与AI人格核心同样能在边缘世界生产。</SV_GlitterTech_TechCore_and_PersonaCore.description>
+
+  <SV_GlitterTech_MechSerum.label>制作纳米机械液</SV_GlitterTech_MechSerum.label>
+  <SV_GlitterTech_MechSerum.description>小心地调整纳米微械直至恰到好处。</SV_GlitterTech_MechSerum.description>
+
+  <SV_GlitterTech_VanometricPowerCell.label>制作虚空电池</SV_GlitterTech_VanometricPowerCell.label>
+  <SV_GlitterTech_VanometricPowerCell.description>不需要燃料，生成永久免费的能源。这种技术由超凡智能开发，甚至超越了绝大多数闪耀世界。虽然没人确切地知道它是如何工作的，但学者们相信它是以某种方式从量子泡沫的波动中直接提取能量的。</SV_GlitterTech_VanometricPowerCell.description>
+
+  <SV_GlitterTech_PsychicEmanator.label>制作心灵放射器</SV_GlitterTech_PsychicEmanator.label>
+  <SV_GlitterTech_PsychicEmanator.description>一种向四周投射抚慰性心灵力场的远古设备。提高附近任何人的心情。能透过墙体产生作用。</SV_GlitterTech_PsychicEmanator.description>
+
+  <SV_GlitterTech_InfiniteChemreactor.label>制作无限反应釜</SV_GlitterTech_InfiniteChemreactor.label>
+  <SV_GlitterTech_InfiniteChemreactor.description>使用从空气中提取的原子，通过一系列复杂的化学反应缓慢地生成化合燃料。</SV_GlitterTech_InfiniteChemreactor.description>
+
+  <SV_Advanced_Materials_Processing.label>高等材料处理</SV_Advanced_Materials_Processing.label>
+  <SV_Advanced_Materials_Processing.description>生产所有边缘世界基础材料。</SV_Advanced_Materials_Processing.description>
+
+  <SV_Resource_Forge.label>材料锻造</SV_Resource_Forge.label>
+  <SV_Resource_Forge.description>学习使用边缘世界的材料加工出高性能合金。</SV_Resource_Forge.description>
+
+  <SV_Alloy_Forge.label>合金锻造</SV_Alloy_Forge.label>
+  <SV_Alloy_Forge.description>对已有合金的进一步压缩以创造更好的材料。</SV_Alloy_Forge.description>
+
+  <SV_Spacer_Industry.label>太空时代工业\n(开发中)</SV_Spacer_Industry.label>
+  <SV_Spacer_Industry.description>太空时代工业</SV_Spacer_Industry.description>
+
+  <SV_Ultra_Industry.label>极致时代工业\n(开发中)</SV_Ultra_Industry.label>
+  <SV_Ultra_Industry.description>极致时代工业</SV_Ultra_Industry.description>
+
+  <SV_Gene_Map.label>基因图谱\n(开发中)</SV_Gene_Map.label>
+  <SV_Gene_Map.description>基因图谱</SV_Gene_Map.description>
+
+  <SV_Gene_Trimming.label>基因裁剪\n(开发中)</SV_Gene_Trimming.label>
+  <SV_Gene_Trimming.description>基因裁剪</SV_Gene_Trimming.description>
+
+  <SV_Advanced_Prosthetic_Components.label>先进义体部件\n(开发中)</SV_Advanced_Prosthetic_Components.label>
+  <SV_Advanced_Prosthetic_Components.description>先进义体部件</SV_Advanced_Prosthetic_Components.description>
+
+  <SV_Genetically_Modified_Plants.label>基因改造植物\n(开发中)</SV_Genetically_Modified_Plants.label>
+  <SV_Genetically_Modified_Plants.description>基因改造植物</SV_Genetically_Modified_Plants.description>
+
+  <SV_Gene_Remodeling.label>基因重塑\n(开发中)</SV_Gene_Remodeling.label>
+  <SV_Gene_Remodeling.description>基因重塑</SV_Gene_Remodeling.description>
+
+  <SV_Spacer_Weapon.label>太空时代武器</SV_Spacer_Weapon.label>
+  <SV_Spacer_Weapon.description>太空时代武器</SV_Spacer_Weapon.description>
+
+  <SV_Ultra_Weapon.label>极致时代武器\n(开发中)</SV_Ultra_Weapon.label>
+  <SV_Ultra_Weapon.description>极致时代武器</SV_Ultra_Weapon.description>
+
+  <SV_Specialization_Melee_Weapon.label>特化近战武器\n(开发中)</SV_Specialization_Melee_Weapon.label>
+  <SV_Specialization_Melee_Weapon.description>特化近战武器</SV_Specialization_Melee_Weapon.description>
+
+  <SV_Specialization_Crossbow.label>特化弓弩\n(开发中)</SV_Specialization_Crossbow.label>
+  <SV_Specialization_Crossbow.description>特化弓弩</SV_Specialization_Crossbow.description>
+
+  <SV_Specialization_Gun.label>特化枪械\n(开发中)</SV_Specialization_Gun.label>
+  <SV_Specialization_Gun.description>特化枪械</SV_Specialization_Gun.description>
 
   <SV_NW_Weapon_Recipe.label>异世界武器</SV_NW_Weapon_Recipe.label>
   <SV_NW_Weapon_Recipe.description>学习制作来自其他世界的武器。</SV_NW_Weapon_Recipe.description>
+
+  <SV_AW_Weapon_Recipe.label>先进异世界武器\n(开发中)</SV_AW_Weapon_Recipe.label>
+  <SV_AW_Weapon_Recipe.description>学习制作来自其他世界的强大武器。</SV_AW_Weapon_Recipe.description>
+
+  <!--<SV_.label>AAA</SV_.label>
+  <SV_.description>AAA</SV_.description>-->
 
 </LanguageData>
