@@ -1,6 +1,10 @@
 Rimworld Mod
+
 Workshop URL: https://steamcommunity.com/sharedfiles/filedetails/?id=3711652575
+
 如何安装：选择右上角绿色按钮<>Code，选择Download ZIP，将解压后的模组放入Rimworld游戏本体文件夹下的Mods文件夹。
+
+
 增加了一些实用物品和功能的自用小模组。
 v1.7.0
 
